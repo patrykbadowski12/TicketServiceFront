@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+form 
+{
+  background: rgb(255,255,255,0.8);
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 28%;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px 1px #b7b7b7;
+}
+
+label, h1
+{
+  color: #cb2031;
+  margin: 10px 10px 10px 10px;
+  padding: 2px 0px 2px 0px;
+  font-weight: bold;
+}
+
+input, select, textarea 
+{
+  border-style: hidden;
+  width: 100%;
+  padding: 12px;
+  border-radius: 7px;
+  font-size: 13px;
+  background: rgb(232, 240, 254) !important;
+  box-sizing: border-box;
+  margin: 10px 0px 10px 0px;
+  box-shadow: 0px 0px 2px 1px #b7b7b7;
+}
+
+#sendForm 
+{
+font-weight: bold;
+border-style: hidden;
+width: 100%;
+padding: 20px;
+border-radius: 7px;
+font-size: 13px;
+box-sizing: border-box;
+margin: 10px 0px 10px 0px;
+font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+box-shadow: 0px 0px 2px 1px #b7b7b7;
+background: linear-gradient(rgb(52, 236, 85), green);
+}
+
