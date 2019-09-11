@@ -8,6 +8,7 @@ class ManageTickets extends React.Component {
     this.state = {
       tickets: []
     }
+    this.deleteButton = this.deleteButton.bind(this);
   }
 
   componentDidMount() {
@@ -25,6 +26,18 @@ class ManageTickets extends React.Component {
         .then(results => this.setState({ tickets: results }));
 }
 
+deleteButton(event) {
+  event.preventDefault();
+  fetch('http://localhost:8080/deleteTicket/' + this.state.tickets[event.target.value].id, {
+      method: 'DELETE',
+      credentials: 'include',
+      headers: {
+          'Content-Type': 'application/json'
+      }
+  });
+}
+
+
   render(){
     return (
     <div className="App">
@@ -36,6 +49,7 @@ class ManageTickets extends React.Component {
             <tbody>
               {this.state.tickets.map((item, index) =>
                 <tr key={index}>
+                  <th><button type="button" value={index} className="btn btn-warning mb-2" onClick={this.deleteButton}>Update</button></th>
                   <th scope='row'>{index + 1}</th>
                   <th>{item.description}</th>
                   <th>{item.department}</th>
@@ -49,5 +63,7 @@ class ManageTickets extends React.Component {
     </div>
     )}
 }
+
+
 
 export default ManageTickets;
