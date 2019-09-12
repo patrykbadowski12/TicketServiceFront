@@ -46,7 +46,6 @@ class RegisterTicket extends React.Component {
         }));
     }
 
-
   render(){
     return (
     <div className="App">
@@ -57,7 +56,7 @@ class RegisterTicket extends React.Component {
         </p>
         <p>
         <label className="text-uppercase">Type:</label>
-            <select className="form-control" value={this.state.department} onChange={this.handleType} value={this.state.problemType} name="problemType">
+            <select className="form-control" onChange={this.handleType} value={this.state.problemType} name="problemType">
                 <option>Software</option>
                 <option>Hardware</option>
             </select>

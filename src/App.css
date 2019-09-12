@@ -78,3 +78,62 @@ font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-seri
 box-shadow: 0px 0px 2px 1px #b7b7b7;
 background: linear-gradient(rgb(52, 236, 85), green);
 }
+
+body {
+  font-family: 'Anton', sans-serif;
+  font-weight: bold;
+}
+
+nav, .tickets {
+  background: rgb(255,255,255,0.8);
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 80%;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px 1px #b7b7b7;
+}
+
+nav .upMenu, .tck {
+  text-align: center; 
+  padding: 0px; 
+  margin: 0px;
+  border-radius: 10px;
+  background: rgb(232, 240, 254) !important;
+  box-shadow: 0px 0px 2px 1px #b7b7b7;
+}
+
+.tck {
+  border-radius: 3px;
+}
+
+nav .upMenu .menu, .inf {
+  display: inline-block; 
+  list-style-type: none;  
+  transition: 0.3s all ease-in-out;
+  word-wrap: break-word;
+}
+
+nav .upMenu .menu a {
+  letter-spacing: 1.4px; 
+  display: block; 
+  text-decoration: none; 
+  padding: 10px;
+  color: #cb2431;
+}
+
+.inf{
+  width: 18%;
+}
+
+.inf  a {
+  display: block; 
+  text-decoration: none; 
+  color: rgb(20,20,20);
+  padding: 0px 15px 0px 15px;
+  color: black;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden !important;
+  white-space: nowrap;
+}
